@@ -9,7 +9,7 @@ import GUI from 'lil-gui'
  * Base
  */
 // Debug
-const gui = new GUI()
+// const gui = new GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -27,7 +27,7 @@ matcapTexture.colorSpace = THREE.SRGBColorSpace
 const fontLoader  = new FontLoader();
 fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     console.log(font);
-    const textGeometry = new TextGeometry('ES JS', {
+    const textGeometry = new TextGeometry('Valentine Test', {
         font: font,
 		size: 0.5,
 		height: 0.2,
@@ -96,9 +96,9 @@ window.addEventListener('resize', () =>
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = 1
-camera.position.y = 1
-camera.position.z = 4
+camera.position.x = 0.5
+camera.position.y = 0.5
+camera.position.z = 3
 scene.add(camera)
 
 // Controls
