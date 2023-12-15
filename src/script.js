@@ -49,7 +49,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     textMaterial.matcap = matcapTexture;
     const text = new THREE.Mesh(textGeometry, textMaterial);
     scene.add(text);
-    const donutGeometry = new THREE.TorusGeometry(0.3, 0.2, 10, 15);
+    const donutGeometry = new THREE.TorusGeometry(0.3, 0.2, 40, 65);
 
     console.time('donut');
     for (let i = 0; i < 200; i++) {
